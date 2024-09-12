@@ -6,23 +6,22 @@ Per importare ed utilizzare un componente dentro ad un altro devo SEMPRE seguire
 3. Utilizzo del componente
 */
 
-//1. Importazione del componente
+import AppTitle from './components/AppTitle.vue';
 
 export default {
   data() {
     return { 
-      message: 'Hello World!'
+      message: ''
     }
+  },
+  components: {
+    AppTitle
   }
 }
 </script>
 
 <template>
-  <div>
-    <h1>
-      {{ message }}
-    </h1>
-  </div>
+  <AppTitle />
 </template>
 
 <style scoped>
